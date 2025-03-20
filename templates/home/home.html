@@ -1,7 +1,76 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}홈페이지{% endblock %}
-
 {% block content %}
-    <h2>홈페이지에 오신 것을 환영합니다!</h2>
-    <p>이곳은 Django 프로젝트의 메인 페이지입니다.</p>
+    <link rel="stylesheet" href="{% static 'css/home/home.css' %}">
+
+    <div class="intro">
+
+        <div class="intro__img">
+            <img src="{% static 'img/kcc_intro.jpg' %}" alt="Kcc_intro_img">
+        </div>
+
+        <div class="intro__text">
+            <div class="intro__text__title">
+                <h1>about <br> KCC</h1>
+            </div>
+            <div class="intro__text__content">
+                <p>
+                    KCC는 1982년 설립된 국민대학교 중앙 학술 동아리로, 유구한 역사를 자랑하는 컴퓨터 소프트웨어 연구 모임입니다.
+                    코딩, 게임, 알고리즘 등 다양한 분야를 함께 학습하며, 파이썬/알고리즘 스터디, 
+                    자율 스터디 등을 통해 자유롭게 성장할 수 있는 환경을 제공합니다.
+                    <br>
+                    <br>
+                    다양한 학과 학생들과 교류하며 협업을 통해 팀 프로젝트를 진행하고, 실무 경험을 쌓을 수 있습니다.
+                    단순한 프로그래밍 학습을 넘어, IT 분야에 관심 있는 모든 학생이 함께 배우고 성장하는 공간입니다.
+                    소프트웨어에 대한 열정과 호기심이 있다면, KCC에서 함께하세요! 🚀
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="activities">
+        <h2>동아리 활동</h2>
+        
+        <div class="activities__container">
+            <div class="activity">
+                <img src="{% static 'img/free_study.png' %}" alt="스터디 활동">
+                <div class="activity__info">
+                    <h3>스터디</h3>
+                    <p>파이썬, 알고리즘 등 다양한 주제로 
+                        <br>스터디를 진행합니다.</p>
+                </div>
+            </div>
+    
+            <div class="activity">
+                <img src="{% static 'img/chinmok.png' %}" alt="친목 활동">
+                <div class="activity__info">
+                    <h3>친목활동</h3>
+                    <p>야구장, 한강, 보드게임 카페, 볼링 등 다양한 활동을 통해 동아리원들과 친해지고 즐거운 시간을 보낼 수 있습니다.</p>
+                </div>
+            </div>
+    
+            <div class="activity">
+                <img src="{% static 'img/networking.png' %}" alt="정기 행사">
+                <div class="activity__info">
+                    <h3>행사 & 네트워킹</h3>
+                    <p>개강총회, 종강총회, MT 등 다양한 행사와 교류를 통해 동아리원들과 친목을 다지고 네트워킹할 수 있는 기회를 제공합니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="location">
+        <h2>동아리방 위치</h2>
+        
+        <div class="location__container">
+            <div class="location__img">
+                <img src="{% static 'img/location.png' %}" alt="KCC 동아리방">
+            </div>
+            
+            <div class="location__info">
+                </h3>국민대학교 종합복지관 233호</h3>
+            </div>
+        </div>
+    </div>
 {% endblock %}
