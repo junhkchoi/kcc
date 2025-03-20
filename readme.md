@@ -35,10 +35,10 @@
 
 | 규칙 | 설명 |
 |------|---------------------------------------------------|
-| **소문자 사용** | `class="button-primary"` (❌ `ButtonPrimary`) |
-| **단어 구분은 `-`(하이픈) 사용** | `class="main-header"` (❌ `main_header` or `MainHeader`) |
+| **소문자 사용** | `class="button-primary"`|
+| **단어 구분은 `-`(하이픈) 사용** | `class="main-header"`  |
 | **아이디는 특수한 경우에만 사용** | `id="user-profile"` (✔) - 특정 요소에만 적용 |
-| **의미를 알기 쉽게 작성** | `class="btn-submit"` (❌ `class="a1"`) |
+| **의미를 알기 쉽게 작성** | `class="btn-submit"` |
 | **BEM(Block Element Modifier) 방식 권장** | `block__element--modifier` |
 
 ### 2. BEM(Block Element Modifier) 네이밍 규칙
