@@ -1,10 +1,10 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Document {% endblock %}</title>
+    {% load static %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}"> 
 </head>
 <body>
@@ -16,17 +16,17 @@
             <div class="navbar__navs">
                 <div class="navbar__navs__github">
                     <a href="https://github.com/junhkchoi/kcc">
-                        <h1>개발자 보러가기</h1>
+                        <p>개발자 보러가기</p>
                     </a>
                 </div>
                 <div class="navbar__navs__post">
-                    <a href=""><h1>공지 보러가기</h1></a>
+                    <a href=""><p>공지 보러가기</p></a>
                 </div>
                 <div class="navbar__navs__ranking">
-                    <a href=""><h1>랭킹 보러가기</h1></a>
+                    <a href=""><p>랭킹 보러가기</p></a>
                 </div>
                 <div class="navbar__navs__account">
-                    <a href=""><h1>회원가입/로그인하기</h1></a>
+                    <a href=""><p>로그인하기</p></a>
                 </div>
             </div>
         </div>
