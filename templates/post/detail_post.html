@@ -1,10 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block title %}방명록 보기{% endblock %}
+
 {% block content %}
     <link rel="stylesheet" href="{% static 'css/post/detail_post.css' %}">
-    <h1>제목: {{detail_post.title}}</h1>
-    <h1>내용: {{detail_post.content}}</h1>
 
-    <a href="{% url 'post_list' %}"><button>돌아가기</button></a>
+    <div class="post-detail-container">
+        <div class="post-header">
+            <div class="nickname-block">
+                <p class="nickname">
+                    <span id="nickname">{{detail_post.name}}</span>
+                    <br>
+                    <span id="date">{{detail_post.create_at}}</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="post-body">
+            <h1 class="post-title">{{ detail_post.title }}</h1>
+            <p class="post-content">{{ detail_post.content }}</p>
+        </div>
+
+        <a href="{% url 'post_list' %}" class="back-btn">← 목록으로 돌아가기</a>
+    </div>
 {% endblock %}
