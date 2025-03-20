@@ -130,6 +130,7 @@
 
 
 .location__info p {
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: bold;
     line-height: 1.6;
 }
