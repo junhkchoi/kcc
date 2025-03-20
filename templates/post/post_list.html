@@ -14,8 +14,8 @@
         <div class="post-grid">
             {% for post in post_list %}
                 <div class="post-card">
-                    <h3 class="post-title">제목: {{ post.title }}</h3>
-                    <p class="post-nickname">닉네임: {{ post.name }}</p>
+                    <h3 class="post-title">{{ post.title }}</h3>
+                    <p class="post-nickname">{{ post.name }}</p>
                     <a href="{% url 'detail_post' post.pk %}" class="read-more">자세히 보기 →</a>
                 </div>
             {% empty %}
