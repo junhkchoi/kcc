@@ -41,9 +41,7 @@
 | **의미를 알기 쉽게 작성** | `class="btn-submit"` (❌ `class="a1"`) |
 | **BEM(Block Element Modifier) 방식 권장** | `block__element--modifier` |
 
----
-
-## 2. BEM(Block Element Modifier) 네이밍 규칙
+### 2. BEM(Block Element Modifier) 네이밍 규칙
 
 | 네이밍 | 설명 | 예제 |
 |--------|----------------------------------|---------------------|
