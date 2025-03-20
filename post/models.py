@@ -5,6 +5,7 @@ class Post(models.Model):
 
     title = models.CharField(max_length=20, blank=False, null=False)
     content = models.TextField(blank=False, null=False)
+    nickname = models.CharField(max_length=10, default="익명" , null=False)
     create_at = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
