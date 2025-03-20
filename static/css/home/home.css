@@ -1,7 +1,6 @@
 /* intro */
 .intro {
     display: flex;
-    gap: 15px; /* 간격 축소 */
     margin-bottom: 50px;
 }
 
@@ -16,7 +15,7 @@
     text-align: right;
     gap: 10px;
     color: white;
-    margin-left: -40px; 
+    margin-left: -80px; 
 }
 
 .intro__text__title {
