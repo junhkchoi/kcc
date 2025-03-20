@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}방명록 작성{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/post/create_post.css' %}">
+
+    <div class="post-container">
+        <h2>방명록 작성</h2>
+        <p>⚠️방명록은 한 번 등록하면 수정이나 삭제가 불가능합니다.⚠️ <br>타인을 비방하거나 선정적인 내용은 삼가 주세요!!</p>
+
+
+        <form action="{% url 'create_post' %}" method="post">
+            {% csrf_token %}
+
+            <label for="nickname">닉네임</label>
+            <input type="text" name="name" placeholder="닉네임을 입력해주세요" value="익명" required>
+
+            <label for="title">제목</label>
+            <input type="text" name="title" placeholder="제목을 입력해주세요" required>
+
+            <label for="content">내용</label>
+            <textarea name="content" rows="5" placeholder="내용을 입력해주세요" required></textarea>
+
+            <button type="submit" class="submit-btn">작성 완료</button>
+        </form>
+
+        <a href="{% url 'post_list' %}" class="back-link">← 목록으로 돌아가기</a>
+    </div>
+{% endblock %}

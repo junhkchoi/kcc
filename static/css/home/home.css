@@ -1,0 +1,135 @@
+/* intro */
+.intro {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.intro__img img {
+    width: 400px; /* 크기 조정 */
+}
+
+.intro__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 10px;
+    color: white;
+    margin-left: -80px; 
+}
+
+.intro__text__title {
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+.intro__text__title h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #32ff32; 
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.intro__text__content {
+    max-width: 70%;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* activites */
+.activities {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+}
+
+.activities h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.activities__container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.activity {
+    background-color: #1a1a1c;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.activity img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.activity__info {
+    padding: 15px;
+}
+
+.activity__info h3 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.activity__info p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* location */
+.location {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.location h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.location__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: #1a1a1c;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.location__img img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.location__info {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.location__info p {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.6;
+}
