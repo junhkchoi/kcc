@@ -1,23 +1,15 @@
 # kcc 홈페이지 제작 레포
 
-
+## 1. 개발 계획
 | App Name | Feature |
 |------|---|
 | post | 공지 | 
 | account | 로그인/회원가입 | 
 | ranking  | 출석 점수, 과제 점수, 참여 점수 관리 |
 | home | 기본 홈페이지, 네비게이션 |
-
-## 개발 계획
 ### Design -> home -> account -> post -> ranking -> Deploy
 
-## 기술 스택
-* BE: Django
-* FE: HTML, CSS, JS
-* Deploy: AWS EC2, Nginx, WSGI
-
-
-## 커밋 컨벤션
+## 2. 커밋 컨벤션
  타입     | 설명                                              |
 |----------|--------------------------------------------------|
 | **feat** | 새로운 기능 추가                                 |
@@ -30,8 +22,8 @@
 | **chore** | 기타 변경 사항 (빌드 설정, 패키지 매니저 설정) |
 | **ci** | CI/CD 관련 설정 수정                             |
 
-## HTML/CSS 네이밍 컨벤션
-### 1. 클래스(Class) 및 아이디(ID) 네이밍 규칙
+## 3. HTML/CSS 네이밍 컨벤션
+### 3-1. 클래스(Class) 및 아이디(ID) 네이밍 규칙
 
 | 규칙 | 설명 |
 |------|---------------------------------------------------|
@@ -41,7 +33,7 @@
 | **의미를 알기 쉽게 작성** | `class="btn-submit"` |
 | **BEM(Block Element Modifier) 방식 권장** | `block__element--modifier` |
 
-### 2. BEM(Block Element Modifier) 네이밍 규칙
+### 3-2. BEM(Block Element Modifier) 네이밍 규칙
 
 | 네이밍 | 설명 | 예제 |
 |--------|----------------------------------|---------------------|
