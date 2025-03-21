@@ -44,12 +44,41 @@ body {
     color: #32ff32;
 }
 
+@media (max-width: 768px) {
+
+
+    .navbar__logo a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar__navs {
+        gap: 10px; /* 간격 줄이기 */
+    }
+
+    .navbar__navs a {
+        font-size: 12px; /* 폰트 크기 줄이기 */
+        padding: 5px; /* 클릭 영역 확보 */
+    }
+}
+
 /* main */
 main {
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 40px;
     margin-bottom: 100px;
     
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-top: 40px;
+    }
 }
 
 /* footer */
