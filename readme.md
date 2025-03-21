@@ -35,10 +35,3 @@ Design ➡️ Home ➡️ Post ➡️ Ranking ➡️ Deploy
 <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
 
 </div>
-
-## 설치 및 실행 방법
-
-1. **프로젝트 클론**
-   ```bash
-   git clone https://github.com/your-repo/kcc-homepage.git
-   cd kcc-homepage
