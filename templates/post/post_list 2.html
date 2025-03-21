@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}방명록{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/post/post_list.css' %}">
+
+    <div class="post-list-container">
+        <h2>방명록</h2>
+
+        <a href="{% url 'create_post' %}" class="write-btn">글쓰기</a>
+
+        <div class="post-grid">
+            {% for post in post_list %}
+                <div class="post-card">
+                    <h3 class="post-title">{{ post.title }}</h3>
+                    <p class="post-nickname">{{ post.name }}</p>
+                    <a href="{% url 'detail_post' post.pk %}" class="read-more">자세히 보기 →</a>
+                </div>
+            {% empty %}
+                <p class="no-posts">아직 작성된 방명록이 없습니다.</p>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

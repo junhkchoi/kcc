@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Document {% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"> 
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar__logo">
+                <a href="{% url 'home' %}"><h1>KCC</h1></a>
+            </div>
+            <div class="navbar__navs">
+                <div class="navbar__navs__github">
+                    <a href="https://github.com/junhkchoi/kcc">
+                        <p>개발자 보러가기</p>
+                    </a>
+                </div>
+                <div class="navbar__navs__post">
+                    <a href="{% url 'post_list' %}"><p>방명록 쓰러가기</p></a>
+                </div>
+                <div class="navbar__navs__ranking">
+                    <a href="{% url 'ranking_list' %}"><p>랭킹 보러가기</p></a>
+                </div>
+                <div class="navbar__navs__reqruit" id='reqruit'>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZFWLsHPFbVANRXj3gW9jiOYhr7ytevRqbhha-47MM8E5-Mg/viewform?usp=header"><p>동아리 지원하기</p></a>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+
+    <footer>
+        <div class="footer__copyright">
+            <p>© 2025 KCC. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
