@@ -18,28 +18,31 @@ Design ➡️ Home ➡️ Post ➡️ Ranking ➡️ Deploy
 
 ---
 
-## 사용 기술
+## 기술 스텍
 
 <div align="center">
 
-### 👩‍💻 프론트엔드  
+### FrontEnd  
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 
-### 🖥 백엔드  
+### BackEnd
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
 
-### 🗄 데이터베이스  
+### DataBase  
 <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
+
+## Deploy Architecture
 
 </div>
 
 ## Deploy Architecture
+<img width="835" alt="architecture" src="https://github.com/user-attachments/assets/bd375239-e97b-44c1-ad4d-48a1ef828e80" />
 
 
-## 
+---
 
 ## 커밋 컨벤션
 
@@ -57,7 +60,7 @@ Design ➡️ Home ➡️ Post ➡️ Ranking ➡️ Deploy
 
 ---
 
-## BEM 방법론
+## BEM 네이밍 방법론
 
 | **요소**   | **설명**                                           | **예시** |
 |------------|--------------------------------------------------|----------|
@@ -66,3 +69,12 @@ Design ➡️ Home ➡️ Post ➡️ Ranking ➡️ Deploy
 | **Modifier** | Block 또는 Element의 변형                        | `.card__button--active {}` |
 
 ---
+
+## 🛠 BEM 네이밍 예제
+
+```html
+<div class="card">
+    <h2 class="card__title">제목</h2>
+    <p class="card__description">설명</p>
+    <button class="card__button card__button--active">클릭</button>
+</div>
